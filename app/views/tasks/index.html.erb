@@ -1,0 +1,12 @@
+<h1>My Tasks:</h1>
+
+<% @tasks.each_with_index do |task, index|  %>
+  <p>
+    <%= "#{index + 1}. " %>
+    <%= link_to task.title,  show_path(task)%>
+  </p>
+<% end %>
+
+
+
+
